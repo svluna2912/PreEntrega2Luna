@@ -4,31 +4,44 @@
   box-sizing: border-box;
 }
 
-header {
+body {
+  background-color: burlywood;
+}
+
+.encabezado .navbar-expand-lg {
   display: flex;
   flex-direction: column;
-  height: 130px;
+  height: 20%;
   width: 100%;
-  background-image: url(../images/backgroundheader.jpg);
+  background-image: url(../images/backgroundheader.jpg)!important; 
   background-size: 100%;
 
 }
 
-header nav ul li a {
+.encabezado nav ul li a {
   text-decoration: none;
   color: rgb(172, 27, 128);
   font-size: 20px;
   margin-left: 55px;
 }
 
-header .logo img {
-  width: 60px;
-  height: 60px;
+.encabezado nav ul li a:hover {
+  background-color: aliceblue;
+  box-shadow: 6px 6px 10px black;
+} 
+
+.encabezado nav ul li a:visited {
+  color: aqua;
 }
 
-header .logo h1 {
+.navbar-brand img {
+  width: 30%;
+  height: 30%;
+}
+
+.empresa {
   color: rgb(79, 8, 146);
-  margin-left: 60px;
+  margin-left: 20px;
 }
 
 nav ul li {
@@ -38,28 +51,35 @@ nav ul li {
 }
 
 .contenedor-images {
-  width: 90%;
+  width: 100vw;
   height: 100vh;
   box-sizing: border-box;
-  display: grid;
+  display:flex;
   margin: 10px auto;
-  grid-template-columns: repeat(3, 1fr) ;
-  grid-template-rows: repeat(3, 1fr);
 
 }
 
 .contenedor-images img {
-  width: 310px;
-  height: 310px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width:425px) {
+    .contenedor-images img {
+    flex-direction: column;
+  }
 }
 
 .profesores {
   width: 600px;
   height: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   border: 1px solid blueviolet;
+  background-color: rgb(216, 169, 153);
   margin: 0 auto;
   margin-top: 20px;
-  padding: 5px;
   position: relative;
 }
 
@@ -74,35 +94,38 @@ nav ul li {
 }
 
 .contenedor-cursos {
-  width: 90%;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
   display: grid;
   margin: 10px auto;
+  align-items: center;
   grid-template-columns: repeat(3, 1fr) ;
   grid-template-rows: repeat(3, 1fr);
 
 }
 
 .contenedor-cursos img{
-  width: 310px;
-  height: 310px;
+  width: 100%;
+  height: 100%;
   border: 1px black;
 }
 
 .modalidades {
   width: 600px;
   height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid blueviolet;
+  background-color: rgb(216, 169, 153);
   margin: 0 auto;
   margin-top: 20px;
-  padding: 5px;
-  position: relative;
-}
+  position: relative;}
 
 .modalidades img {
-  width: 450px;
-  height: 400px;
+  width: 70%;
+  height: 70%;
 }
 
 .modalidades p {
@@ -131,11 +154,13 @@ nav ul li {
   background-color: rgb(225, 217, 233);
   box-sizing: border-box;
   display: flex;
+  width: 100%;
+  height: 20%;
 }
 
 iframe {
-  width: 200px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
 }
 
 .redes a i {

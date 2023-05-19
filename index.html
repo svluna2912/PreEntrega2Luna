@@ -1,63 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/b0070f10f4.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://kit.fontawesome.com/b0070f10f4.js"crossorigin="anonymous"></script>
+    
     <title>Inicio</title>
-  </head>
+  </head>   
   <body>
     <!-- HEADER -->
-    <header>
-      <div class="logo">
-        <img src="./icons/logo ab vitro.jpg" alt="logo" />
-        <h1>AB vitro: Taller de oficios y artes multiples</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="./pages/nosotros.html">Nosotros</a></li>
-          <li><a href="./pages/cursos.html">Cursos</a></li>
-          <li><a href="./pages/modalidades.html">Modalidades</a></li>
-          <li><a href="./pages/comunicate.html">Comunicate</a></li>
-        </ul>
+    <header class="encabezado">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./icons/logo ab vitro.jpg" alt="logo"/></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <h1 class="empresa">AB Vitro</h1>
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              <a class="nav-link" href="./pages/cursos.html">Cursos</a>
+              <a class="nav-link" href="./pages/modalidades.html">Modalidades</a>
+              <a class="nav-link" href="./pages/comunicate.html">Comunicate</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <!-- MAIN INICIO -->
     <main>
       <section class="contenedor-images">
-
-        <div class="images-1">
-          <img src="./images/llamador.jpg" alt="llamador" />
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/arbol navideño.jpg" class="d-block w-100" alt="arbol-navideño">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/cuadro flores.jpg" class="d-block w-100" alt="cuadro-flores">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/fogones varios.jpg" class="d-block w-100" alt="fogones">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/cuadro charly.jpg" class="d-block w-100" alt="cuadro-charly">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/grisalla caballo.jpg" class="d-block w-100" alt="crayolas">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/lampara transparente.jpg" class="d-block w-100" alt="lampara">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="images-2">
-          <img src="./images/trabajo mosaiquismo.jpg" alt="trabajomosaiquismo">
-        </div>
-        <div class="images-3">
-          <img src="./images/lampara transparente.jpg" alt="lampara" />
-        </div>
-        <div class="images-4">
-          <img src="./images/cuadro flores.jpg" alt="cuadroflores" />
-        </div>
-        <div class="images-5">
-          <img src="./images/grisalla caballo.jpg" alt="crayola-caballo" />
-        </div>
-        <div class="images-6">
-          <img src="./images/porta vela.jpg" alt="porta-vela">
-        </div>  
-
       </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="pie">
       <div class="ubicacion">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.4024659454353!2d-60.66176932509807!3d-32.940382071570916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab45b42a119d%3A0xf75eee098012559b!2sSan%20Lorenzo%202677%2C%20S2000KPI%20Rosario%2C%20Santa%20Fe!5e0!3m2!1sen!2sar!4v1683666384518!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.4024659454353!2d-60.66176932509807!3d-32.940382071570916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab45b42a119d%3A0xf75eee098012559b!2sSan%20Lorenzo%202677%2C%20S2000KPI%20Rosario%2C%20Santa%20Fe!5e0!3m2!1sen!2sar!4v1683666384518!5m2!1sen!2sar"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
       <div class="redes">
         <a href="https://www.instagram.com/" target="_blank"
@@ -69,5 +97,8 @@
       </div>
     </footer>
 
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
