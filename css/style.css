@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  width: 100%;
+  background-image: url(../images/backgroundheader.jpg);
+  background-size: 100%;
+
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(172, 27, 128);
+  font-size: 20px;
+  margin-left: 55px;
+}
+
+header .logo img {
+  width: 60px;
+  height: 60px;
+}
+
+header .logo h1 {
+  color: rgb(79, 8, 146);
+  margin-left: 60px;
+}
+
+nav ul li {
+
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+}
+
+.contenedor-images {
+  width: 90%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: grid;
+  margin: 10px auto;
+  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-rows: repeat(3, 1fr);
+
+}
+
+.contenedor-images img {
+  width: 310px;
+  height: 310px;
+}
+
+.profesores {
+  width: 600px;
+  height: 600px;
+  border: 1px solid blueviolet;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 5px;
+  position: relative;
+}
+
+.profesores img {
+  width: 400px;
+  height: 400px;
+}
+
+.profesores p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.contenedor-cursos {
+  width: 90%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: grid;
+  margin: 10px auto;
+  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-rows: repeat(3, 1fr);
+
+}
+
+.contenedor-cursos img{
+  width: 310px;
+  height: 310px;
+  border: 1px black;
+}
+
+.modalidades {
+  width: 600px;
+  height: 600px;
+  border: 1px solid blueviolet;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 5px;
+  position: relative;
+}
+
+.modalidades img {
+  width: 450px;
+  height: 400px;
+}
+
+.modalidades p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.contenedor-formulario {
+  padding-top: 20px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.contenedor-formulario .contenido-asunto ul li {
+  list-style: none;
+}
+
+.contenedor-formulario .contenido-asunto ul li input, li textarea {
+  width: 400px;
+}
+
+.pie {
+  background-color: rgb(225, 217, 233);
+  box-sizing: border-box;
+  display: flex;
+}
+
+iframe {
+  width: 200px;
+  height: 150px;
+}
+
+.redes a i {
+  font-size: 25px;
+  text-align: center;
+}
