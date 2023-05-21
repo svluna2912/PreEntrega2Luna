@@ -5,10 +5,10 @@
 }
 
 body {
-  background-color: burlywood;
+  background-color: rgb(241, 240, 174);
 }
 
-.encabezado .navbar-expand-lg {
+.navbar-expand-lg {
   display: flex;
   flex-direction: column;
   height: 20%;
@@ -18,19 +18,18 @@ body {
 
 }
 
-.encabezado nav ul li a {
-  text-decoration: none;
-  color: rgb(172, 27, 128);
-  font-size: 20px;
-  margin-left: 55px;
-}
-
-.encabezado nav ul li a:hover {
+.navbar-nav a:hover {
   background-color: aliceblue;
   box-shadow: 6px 6px 10px black;
-} 
+  } 
 
-.encabezado nav ul li a:visited {
+.nav-link {
+  font-family: Verdana !important;
+  font-size: large !important;
+
+}
+
+.navbar-nav a:visited {
   color: aqua;
 }
 
@@ -39,42 +38,9 @@ body {
   height: 30%;
 }
 
-.empresa {
-  color: rgb(79, 8, 146);
-  margin-left: 20px;
-}
-
-nav ul li {
-
-  font-family: Arial, Helvetica, sans-serif;
-  display: inline-block;
-}
-
-.contenedor-images {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  display: grid;
-  margin: 10px auto;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr) ;
-  grid-template-rows: repeat(3, 1fr);
-
-}
-
-.contenedor-images img {
-  width: 100%;
-  height: 100%;
-}
 
 .bg-carta {
-  background-color: rgb(84, 131, 218);
-}
-
-@media (max-width:425px) {
-    .contenedor-images img {
-    flex-direction: column;
-  }
+  background-color: rgba(159, 186, 236, 0.952);
 }
 
 .profesores {
@@ -82,7 +48,7 @@ nav ul li {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  border: 1px solid blueviolet;
+  border: 2px solid black;
   background-color: rgb(216, 169, 153);
   margin: 0 auto;
   margin-top: 20px;
@@ -90,6 +56,8 @@ nav ul li {
 }
 
 .staff img {
+  padding-top: 40px;
+  padding-left: 20px;
   width: 90%;
   height: 90%;
 }
@@ -103,8 +71,10 @@ nav ul li {
   display: flex;
   justify-content: left;
   text-align: justify;
+  padding-top: 40px;
+  padding-right: 20px;
   position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
 }
 
