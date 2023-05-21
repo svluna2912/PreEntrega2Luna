@@ -87,19 +87,6 @@ body {
     flex-direction: column;
   }
 }
-  
-
-.contenedor-cursos {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  display: grid;
-  margin: 10px auto;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr) ;
-  grid-template-rows: repeat(3, 1fr);
-
-}
 
 .modalidades {
   width: 80%;
@@ -130,34 +117,48 @@ body {
   font-size: 23px;
 }
 
-.card {
-  padding-top: 20px;
-  margin-left: 50px;
+.contenedor-formulario {
+  width: 800px;
+  margin: 20 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(225, 217, 233);
 }
 
-.div-form {
+.contenedor-formulario .contenido-form {
   width: 100%;
-  display: grid;
-  padding: 50px 10px 50px 10px;
-  box-sizing: border-box;
-  background-color: rgb(225, 217, 233);
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.contenido-form .form-asunto ul li{
+  justify-items: center;
+  list-style-type: none;
 }
 
-iframe {
-  width: 30%;
-  height: 30%;
+.contenedor-formulario h3 {
+  text-align: center;
 }
 
+.ubicacion {
+  width: 80%;
+  margin-top: 50px;
+}
+  
+.ubicacion iframe {
+  width: 60%;
+  height: 40%;
+
+}
 .footer-container {
   width: 100%;
   height: auto;
   background-image: url(../images/backgroundheader.jpg);
-  background-size: 100%;
+  background-size: 100%; 
+  position: absolute;
+  margin-bottom: 0;
 }
 
 .footer-redes {
