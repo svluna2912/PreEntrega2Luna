@@ -30,7 +30,7 @@ body {
 }
 
 .navbar-nav a:visited {
-  color: aqua;
+  color: rgb(224, 9, 99);
 }
 
 .navbar-brand img {
@@ -53,7 +53,7 @@ body {
   display: flex;
   flex-direction: row;
   border: 2px solid black;
-  background-color: rgb(216, 169, 153);
+  background-color: rgba(243, 223, 245, 0.952);
   margin: 0 auto;
   margin-top: 20px;
   position: relative;
@@ -94,7 +94,7 @@ body {
   display: flex;
   flex-direction: row;
   border: 2px solid black;
-  background-color: rgb(216, 169, 153);
+  background-color: rgba(243, 223, 245, 0.952);
   margin: 0 auto;
   margin-top: 20px;
   position: relative;
@@ -137,21 +137,32 @@ body {
   justify-items: center;
   list-style-type: none;
 }
+.campo {
+  width: 330px;
+}
 
 .contenedor-formulario h3 {
   text-align: center;
 }
 
 .ubicacion {
+  display: flex;
   width: 80%;
   margin-top: 50px;
 }
   
 .ubicacion iframe {
+  margin-left: 150px;
   width: 60%;
   height: 40%;
-
 }
+
+@media (max-width: 600px) {
+  .contenido-form {
+    flex-direction: column;
+  }
+}
+
 .footer-container {
   width: 100%;
   height: auto;
