@@ -230,11 +230,11 @@ body {
 }
 
 @media (max-width: 548px) {
-  .footer-container ul li  {
+  .footer-container ul li {
     flex-direction: column;
   }
-  .footer {
-    margin-top: 40%;
-  }
- 
+}
+
+.footer {
+  margin-top: 40%;
 }
