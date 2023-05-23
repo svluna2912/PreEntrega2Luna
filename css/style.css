@@ -56,6 +56,7 @@ body {
 
 
 .profesores {
+  overflow: scroll;
   width: 80%;
   height: 100vh;
   display: flex;
@@ -88,7 +89,7 @@ body {
   padding-right: 20px;
   position: absolute;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 @media (max-width: 730px) {
@@ -99,6 +100,7 @@ body {
 
 
 .modalidades {
+  overflow: scroll;
   width: 80%;
   height: 100vh;
   display: flex;
@@ -130,14 +132,12 @@ body {
   padding-right: 20px;
   position: absolute;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 23px;
-  position: relative;
+  font-size: 20px;
 }
 
 @media (max-width: 730px) {
   .modalidades {
     flex-direction: column;
-    height: 1500px;
   }
 }
 
@@ -192,7 +192,6 @@ body {
   background-image: url(../images/backgroundheader.jpg);
   background-size: 100%;
   padding-bottom: 0;
-  position: absolute;
   bottom: 0;
 }
 
@@ -236,7 +235,7 @@ body {
     flex-direction: column;
   }
   .footer {
-    margin-top: 20%;
+    margin-top: 40%;
   }
  
 }
