@@ -5,14 +5,14 @@
 }
 
 body {
-  background-color: rgb(238, 206, 136);
+  background-color: rgba(243, 223, 245, 0.952);
   height: 100vh;
 }
 
 .navbar-expand-lg {
   display: flex;
   flex-direction: column;
-  height: 20%;
+  height: 20vh;
   width: 100%;
   background-image: url(../images/backgroundheader.jpg)!important; 
   background-size: 100%;
@@ -26,12 +26,12 @@ body {
 
 .nav-link {
   font-family: Verdana !important;
-  font-size: large !important;
-  font-weight: lighter;
+  font-size: x-large !important;
+  font-weight: light ; 
 }
 
 .navbar-nav a:visited {
-  color: rgb(224, 9, 99);
+  color: rgb(238, 20, 20);
 }
 
 .navbar-brand img {
@@ -50,10 +50,22 @@ body {
 
 .main {
   height: 100%;
+  margin-top: 40px;
   min-height: 100vh;
   position: relative;
 }
 
+.titulo1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.titulo3 {
+  text-align: center;
+  font-family: Verdana;
+  font-size: xx-large;
+}
 .profesores {
   overflow: scroll;
   width: 80%;
@@ -62,8 +74,8 @@ body {
   flex-direction: row;
   border: 2px solid black;
   background-color: rgba(243, 223, 245, 0.952);
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: auto;
+  margin-top: 30px;
   position: relative;
 }
 
@@ -97,6 +109,11 @@ body {
   }
 }
 
+.titulo2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
 .modalidades {
   overflow: scroll;
@@ -164,7 +181,7 @@ body {
   width: 330px;
 }
 
-.contenedor-formulario h3 {
+.contenedor-formulario h1 {
   text-align: center;
 }
 
@@ -176,19 +193,21 @@ body {
   
 .ubicacion iframe {
   margin-left: 150px;
-  width: 60%;
-  height: 40%;
+  width: 80%;
+  height: 60%;
 }
 
 @media (max-width: 548px) {
-  .contenido-form {
+  .contenido-form{
+    display: flex;
     flex-direction: column;
+    text-align: center;
   }
 }
 
 .footer {
-  height: 15vh;
-  background-image: url(../images/backgroundheader.jpg);
+  height: 20vh;
+  background-color: grey;
   background-size: 100%;
   padding-bottom: 0;
   bottom: 0;
@@ -219,9 +238,8 @@ body {
   justify-content: center;
 }
 
-.footer-nav ul li a {
+.footer-nav ul li {
   list-style-type: none;
-  text-decoration: none;
   margin: 20px;
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -229,8 +247,14 @@ body {
   font-weight: lighter;
 }
 
+.footer-nav ul li a {
+  text-decoration: none;
+}
+
 @media (max-width: 548px) {
-  .footer-container ul li {
+  .footer-nav ul {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
   }
 }
