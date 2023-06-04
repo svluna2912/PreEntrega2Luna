@@ -220,7 +220,7 @@ body {
 .footer {
   width: 100%;
   height: auto;
-  background-color: grey;
+  background-image: linear-gradient(rgb(7, 75, 114), rgb(204, 37, 101));
   margin-top: 35%;
   bottom: 0;
   position: relative;
@@ -229,7 +229,7 @@ body {
 .footer-contacto {
   width: 100%;
   height: auto;
-  background-color: grey;
+  background-image: linear-gradient(rgb(7, 75, 114), rgb(204, 37, 101));
   margin-top: 10%;
   bottom: 0;
   position: relative;
@@ -238,7 +238,7 @@ body {
 .footer-cursos {
   width: 100%;
   height: auto;
-  background-color: grey;
+  background-image: linear-gradient(rgb(7, 75, 114), rgb(204, 37, 101));
   margin-top: 20%;
   bottom: 0;
   position: relative;
