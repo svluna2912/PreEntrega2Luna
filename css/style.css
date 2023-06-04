@@ -221,7 +221,25 @@ body {
   width: 100%;
   height: auto;
   background-color: grey;
-  margin-top: 0;
+  margin-top: 35%;
+  bottom: 0;
+  position: relative;
+}
+
+.footer-contacto {
+  width: 100%;
+  height: auto;
+  background-color: grey;
+  margin-top: 10%;
+  bottom: 0;
+  position: relative;
+}
+
+.footer-cursos {
+  width: 100%;
+  height: auto;
+  background-color: grey;
+  margin-top: 20%;
   bottom: 0;
   position: relative;
 }
@@ -270,8 +288,4 @@ body {
     justify-content: center;
     flex-direction: column;
   }
-}
-
-.footer {
-  margin-top: 40%;
 }
