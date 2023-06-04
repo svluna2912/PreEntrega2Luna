@@ -75,7 +75,7 @@ body {
   border: 2px solid black;
   background-color: rgba(243, 223, 245, 0.952);
   margin: auto;
-  margin-top: 30px;
+  margin-top: 80px;
   position: relative;
 }
 
@@ -124,7 +124,7 @@ body {
   border: 2px solid black;
   background-color: rgba(243, 223, 245, 0.952);
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 80px;
   position: relative;
 }
 
@@ -147,8 +147,23 @@ body {
   padding-top: 40px;
   padding-right: 20px;
   position: absolute;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-family: Verdana;
+  font-size: 25px;
+}
+
+.seminarios {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 60px;
+  margin-left: 150px;
+}
+
+.cursos-cortos p {
+  font-family: Verdana;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-top: 30px;
 }
 
 @media (max-width: 730px) {
@@ -157,17 +172,11 @@ body {
   }
 }
 
-.ubicacion iframe {
-  margin-left: 150px;
-  width: 80%;
-  height: 60%;
-}
-
-@media (max-width: 548px) {
-  .contenido-form {
+@media (max-width: 730px) {
+  .seminarios {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
   }
 }
 
@@ -177,6 +186,7 @@ body {
   background-color: grey;
   margin-top: 0;
   bottom: 0;
+  position: relative;
 }
 
 .footer-container {
