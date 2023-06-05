@@ -1,50 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: rgba(243, 223, 245, 0.952);
   height: 100vh;
-}
-
-.navbar-expand-lg {
-  display: flex;
-  flex-direction: column;
-  height: 20vh;
-  width: 100%;
-  background-image: url(../images/backgroundheader.jpg) !important;
-  background-size: 100%;
-}
-
-.navbar-nav a:hover {
-  background-color: aliceblue;
-  box-shadow: 6px 6px 10px black;
-}
-
-.nav-link {
-  font-family: Verdana !important;
-  font-size: x-large !important;
-  font-weight: light;
-}
-
-.navbar-nav a:visited {
-  color: rgb(238, 20, 20);
-}
-
-.navbar-brand img {
-  width: 30%;
-  height: 30%;
-}
-
-.header .redes {
-  display: flex;
-  align-items: end;
-}
-
-.bg-carta {
-  background-color: rgba(159, 186, 236, 0.952);
 }
 
 .main {
