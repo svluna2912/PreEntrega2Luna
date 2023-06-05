@@ -1,0 +1,71 @@
+.modalidades {
+    overflow: scroll;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    border: $bordes-cajas;
+    background-color: $background-cajas;
+    margin: 0 auto;
+    margin-top: 80px;
+    position: relative;
+  }
+  
+  .modalidades-img img {
+    padding-top: 40px;
+    padding-left: 20px;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .frecuencia {
+    width: 50%;
+    height: auto;
+  
+    p {
+      display: flex;
+      justify-content: left;
+      text-align: justify;
+      padding-top: 40px;
+      padding-right: 20px;
+      position: absolute;
+      font-family: Verdana;
+      font-size: 25px;
+    }
+  }
+  
+  .seminarios {
+    overflow: scroll;
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    border: $bordes-cajas;
+    background-color: $background-cajas;
+    margin: 0 auto;
+    margin-top: 80px;
+    position: relative;
+  }
+  
+  .cursos-cortos p {
+    font-family: Verdana;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-top: 30px;
+  }
+  
+  @media (max-width: 730px) {
+    .modalidades {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 730px) {
+    .seminarios {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 5px;
+    }
+  }
+  

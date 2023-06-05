@@ -1,0 +1,72 @@
+.footer {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgb(7, 75, 114), rgb(204, 37, 101));
+    margin-top: 35%;
+    bottom: 0;
+    position: relative;
+  }
+  
+  .footer-contacto {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgb(7, 75, 114), rgb(204, 37, 101));
+    margin-top: 10%;
+    bottom: 0;
+    position: relative;
+  }
+  
+  .footer-cursos {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgb(7, 75, 114), rgb(204, 37, 101));
+    margin-top: 20%;
+    bottom: 0;
+    position: relative;
+  }
+  
+  .footer-container {
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer-redes {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  
+    a img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  .footer-nav {
+    margin: 30px 0;
+  
+    ul {
+      display: flex;
+      justify-content: center;
+  
+      li {
+        list-style-type: none;
+        margin: 20px;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: larger;
+        font-weight: lighter;
+  
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 548px) {
+    .footer-nav ul {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
