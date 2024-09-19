@@ -1,29 +1,49 @@
-//Ingresar productos al stock
+// constructor para crear productos
+function Producto(nombre, talle, cantidad) {
+    this.nombre = nombre;
+    this.talle = talle;
+    this.cantidad = cantidad;
+}
+
+// ingreso de productos al stock
 function ingresarProductos() {
     let productos = [];
     let continuar = true;
-    while (continuar === true){
-        const producto = prompt ("ingresa el producto");
-        const talle = parseInt (prompt("ingresa el talle"));
-        const cantidad = parseInt (prompt("ingresa la cantidad"));
-        if (isNaN(talle)){
-            alert ("ingresa un numero");
-        } else if (isNaN(cantidad)){
-            alert ("ingresa un numero");
-        } else{
-            productos.push({producto:producto, talle:talle, cantidad:cantidad})
+    
+    while (continuar) {
+        const nombre = prompt("Ingresa el nombre del producto:");
+        const talle = parseInt(prompt("Ingresa el talle:"));
+        const cantidad = parseInt(prompt("Ingresa la cantidad:"));
+        
+        if (isNaN(talle)) {
+            alert("Debes ingresar un número");
+        } else if (isNaN(cantidad)) {
+            alert("Debes ingresar un número");
+        } else {
+            const nuevoProducto = new Producto(nombre, talle, cantidad);
+            productos.push(nuevoProducto);
         }
-        const respuesta = prompt ("¿queres continuar ingresando productos? si/no").toLowerCase();
-        if (respuesta==="si"){
-            continuar===true;
-        } else{
-            continuar===false;
-        }
+        
+        const respuesta = prompt("¿Quieres continuar ingresando productos? si/no").toLowerCase();
+        continuar = (respuesta === "si");
     }
+    
     return productos;
-} 
-//Buscar en stock productos talle 42
-function calcularStock (productos){
-    const suma = productos.filter((productos)=> productos.talle ===42);
-    return suma;
+}
+
+// busqueda en stock de productos talle 42
+function calcularStock(productos) {
+    return productos.filter(producto => producto.talle === 42);
+}
+
+// método para saber si hay productos en stock
+function mostrarProductos(productos) {
+    if (productos.length === 0) {
+        console.log("No hay productos en el stock.");
+        return;
+    }
+    
+    productos.forEach(producto => {
+        console.log(`Producto: ${producto.nombre}, Talle: ${producto.talle}, Cantidad: ${producto.cantidad}`);
+    });
 }
